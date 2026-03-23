@@ -167,6 +167,187 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!--下拉文本选项框ComboBox 192*32-->
+        <Style x:Key="ComboxBoxStyle" TargetType="ComboBox" BasedOn="{StaticResource FontStyle}">
+            <!--设置ComboBox的默认尺寸 192*32-->
+            <Setter Property="Width" Value="192"/>
+            <Setter Property="Height" Value="32"/>
+            <!--设置基本属性-->
+            <Setter Property="Background" Value="#364d5b99"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#52616b"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Padding" Value="10,4,0,5"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+            <!-- 下拉列表项样式 -->
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Background" Value="#364d5b"/>
+                        <Setter Property="Foreground" Value="#FFFFFF"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ComboBoxItem">
+                                    <Border x:Name="ItemBorder"
+                                            Background="{TemplateBinding Background}"
+                                            CornerRadius="0">
+                                        <ContentPresenter Margin="{TemplateBinding Padding}"
+                                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="ItemBorder" Property="Background" Value="#4a6572"/>
+                                        </Trigger>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="ItemBorder" Property="Background" Value="#2c5c70"/>
+                                            <Setter TargetName="ItemBorder" Property="BorderBrush" Value="#0cb7b9"/>
+                                            <Setter TargetName="ItemBorder" Property="BorderThickness" Value="1"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border x:Name="ComboBoxBorder"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="4">
+                                <Grid>
+                                    <!--文本框+箭头标号-->
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--显示选中的TextBlock-->
+                                    <ContentPresenter Grid.Column="0"
+                                                      Content="{TemplateBinding SelectionBoxItem}"
+                                                      ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                                      Margin="{TemplateBinding Padding}"
+                                                      VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"/>
+                                    <!-- 下拉箭头：核心修改旋转轴心，保留所有设计稿属性 -->
+                                    <Grid Grid.Column="1" 
+                                          Width="14" Height="9"
+                                          Margin="0,11,8,11"
+                                          VerticalAlignment="Bottom">
+                                        <!-- 用Grid包裹箭头，固定位置后再旋转 -->
+                                        <Path x:Name="Arrow"
+                                              Data="M1,2 L7,8 L13,2 A2,2 0 0 1 11,0 L3,0 A2,2 0 0 1 1,2 Z"
+                                              Fill="#d9d9d9"
+                                              Stroke="#d9d9d9"
+                                              StrokeThickness="1"
+                                              StrokeLineJoin="Round"
+                                              StrokeStartLineCap="Round"
+                                              StrokeEndLineCap="Round"
+                                              Width="14"
+                                              Height="10"
+                                              RenderTransformOrigin="0.5,0.5"
+                                              Opacity="0.9"
+                                              IsHitTestVisible="False">
+                                            <Path.RenderTransform>
+                                                <RotateTransform Angle="0"/>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+
+                            <!-- 透明ToggleButton，负责点击展开/收起 -->
+                            <ToggleButton x:Name="ToggleButton"
+                          IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                          Focusable="False">
+                                <ToggleButton.Style>
+                                    <Style TargetType="ToggleButton">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                        <Setter Property="BorderThickness" Value="0"/>
+                                        <Setter Property="Padding" Value="0"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ToggleButton">
+                                                    <Border Background="Transparent"/>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="Transparent"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="Background" Value="Transparent"/>
+                                            </Trigger>
+                                            <Trigger Property="IsChecked" Value="True">
+                                                <Setter Property="Background" Value="Transparent"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ToggleButton.Style>
+                            </ToggleButton>
+
+                            <!-- Popup：消除系统三角 -->
+                            <Popup x:Name="PART_Popup"
+                                   AllowsTransparency="True"
+                                   IsOpen="{TemplateBinding IsDropDownOpen}"
+                                   Placement="Bottom"
+                                   PlacementTarget="{Binding ElementName=ComboBoxBorder}"
+                                   VerticalOffset="1"
+                                   PopupAnimation="Slide"
+                                   StaysOpen="False">
+                                <Border Background="#364d5b"
+                                        BorderBrush="#0cb7b9"
+                                        BorderThickness="1"
+                                        CornerRadius="4"
+                                        MinWidth="{TemplateBinding ActualWidth}"
+                                        MaxHeight="200">
+                                    <ScrollViewer x:Name="DropDownScrollViewer"
+                                                  VerticalScrollBarVisibility="Auto"
+                                                  HorizontalScrollBarVisibility="Disabled"
+                                                  Padding="0">
+                                        <ItemsPresenter/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                        <!-- 触发器：仅旋转箭头，位置不变 -->
+                        <ControlTemplate.Triggers>
+                            <!-- 鼠标悬停 -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ComboBoxBorder" Property="Background" Value="#364d5b"/>
+                            </Trigger>
+
+                            <!-- 获得焦点 -->
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter TargetName="ComboBoxBorder" Property="BorderBrush" Value="#0cb7b9"/>
+                            </Trigger>
+
+                            <!-- 下拉打开时旋转箭头：仅旋转，位置固定 -->
+                            <Trigger Property="IsDropDownOpen" Value="True">
+                                <Setter TargetName="Arrow" Property="RenderTransform">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="180"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
         <!-- 滑动开关样式 开关按钮样式 -->
         <Style x:Key="SliderButtonStyle" TargetType="ToggleButton">

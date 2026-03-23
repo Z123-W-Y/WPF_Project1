@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\pages\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\manualview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\pages\\manualview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -39,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\startviews\\btnhistorysearchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\manualview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\pages\\manualview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\pauseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\pages\\pauseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|solutionrelative:project\\views\\pages\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A5AFDA7-98E5-90C4-3164-A14884667405}|Project\\Project.csproj|f:\\git\\wpf_project1\\project\\project\\views\\pages\\stopview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -110,7 +110,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "StartView.xaml",
+              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StartView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\Pages\\StartView.xaml",
+              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StartView.xaml",
+              "RelativeToolTip": "Project\\Views\\Pages\\StartView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-21T07:00:31.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManualView.xaml",
+              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\ManualView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\Pages\\ManualView.xaml",
+              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\ManualView.xaml",
+              "RelativeToolTip": "Project\\Views\\Pages\\ManualView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-21T03:42:16.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Project\\MainWindow.xaml",
@@ -121,18 +145,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SetView.xaml",
-              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\SetView.xaml",
-              "RelativeDocumentMoniker": "Project\\Views\\Pages\\SetView.xaml",
-              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\SetView.xaml",
-              "RelativeToolTip": "Project\\Views\\Pages\\SetView.xaml",
+              "DocumentIndex": 1,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\HomeView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\Pages\\HomeView.xaml",
+              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\HomeView.xaml",
+              "RelativeToolTip": "Project\\Views\\Pages\\HomeView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-21T03:43:00.562Z"
+              "WhenOpened": "2026-03-21T03:41:07.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "StartView.xaml.cs",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StartView.xaml.cs",
               "RelativeDocumentMoniker": "Project\\Views\\Pages\\StartView.xaml.cs",
@@ -144,18 +169,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StartView.xaml",
-              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StartView.xaml",
-              "RelativeDocumentMoniker": "Project\\Views\\Pages\\StartView.xaml",
-              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StartView.xaml",
-              "RelativeToolTip": "Project\\Views\\Pages\\StartView.xaml",
+              "DocumentIndex": 5,
+              "Title": "SetView.xaml",
+              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\SetView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\Pages\\SetView.xaml",
+              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\SetView.xaml",
+              "RelativeToolTip": "Project\\Views\\Pages\\SetView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-21T07:00:31.117Z"
+              "WhenOpened": "2026-03-21T03:43:00.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AlarmStateManager.cs",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\AlarmStateManager.cs",
               "RelativeDocumentMoniker": "Project\\AlarmStateManager.cs",
@@ -167,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SetView.xaml.cs",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\SetView.xaml.cs",
               "RelativeDocumentMoniker": "Project\\Views\\Pages\\SetView.xaml.cs",
@@ -179,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Project\\MainWindow.xaml.cs",
@@ -191,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "btnHistorySearchView.xaml",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\StartViews\\btnHistorySearchView.xaml",
               "RelativeDocumentMoniker": "Project\\Views\\StartViews\\btnHistorySearchView.xaml",
@@ -202,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PauseView.xaml",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\PauseView.xaml",
               "RelativeDocumentMoniker": "Project\\Views\\Pages\\PauseView.xaml",
@@ -213,28 +238,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ManualView.xaml",
-              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\ManualView.xaml",
-              "RelativeDocumentMoniker": "Project\\Views\\Pages\\ManualView.xaml",
-              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\ManualView.xaml",
-              "RelativeToolTip": "Project\\Views\\Pages\\ManualView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-21T03:42:16.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeView.xaml",
-              "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\HomeView.xaml",
-              "RelativeDocumentMoniker": "Project\\Views\\Pages\\HomeView.xaml",
-              "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\HomeView.xaml",
-              "RelativeToolTip": "Project\\Views\\Pages\\HomeView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-21T03:41:07.635Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "StopView.xaml",
               "DocumentMoniker": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StopView.xaml",
@@ -242,7 +245,8 @@
               "ToolTip": "F:\\git\\WPF_Project1\\Project\\Project\\Views\\Pages\\StopView.xaml",
               "RelativeToolTip": "Project\\Views\\Pages\\StopView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-21T03:43:15.36Z"
+              "WhenOpened": "2026-03-21T03:43:15.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
