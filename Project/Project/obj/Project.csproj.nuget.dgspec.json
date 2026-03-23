@@ -1,43 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj": {}
+    "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
-    "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj": {
+    "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "projectUniqueName": "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\bleach\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\obj\\",
+        "projectPath": "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\niupi\\.nuget\\packages\\",
+        "outputPath": "D:\\工作\\WPF_Project1\\Project\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Visual Studio\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bleach\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {}
-  },
-  "projects": {
-    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
-        "projectName": "Project",
-        "projectPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\梦茹\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\VShuancun\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\梦茹\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> be1546bf69150d24ebaa9c224f45ee65d911cb94
+          "C:\\Users\\niupi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -64,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0-windows7.0": {
@@ -88,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

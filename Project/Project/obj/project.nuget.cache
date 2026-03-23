@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "JL12VYa18nU=",
+  "dgSpecHash": "qwYga/a9vis=",
   "success": true,
-  "projectFilePath": "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj",
-=======
-  "dgSpecHash": "nwTAslFLO3Y=",
-  "success": true,
-  "projectFilePath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
->>>>>>> be1546bf69150d24ebaa9c224f45ee65d911cb94
+  "projectFilePath": "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
