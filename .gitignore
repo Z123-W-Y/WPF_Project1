@@ -1,0 +1,22 @@
+# 忽略 Project 子目录下的 .vs 文件夹（关键！）
+Project/.vs/
+
+# 其他 Visual Studio 用户特定文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 构建输出（可选但推荐）
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# NuGet 包
+packages/
+
+# 日志和临时文件
+*.log
+*.tmp
+Thumbs.db

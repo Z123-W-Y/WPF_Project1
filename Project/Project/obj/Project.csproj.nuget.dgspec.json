@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj": {}
+    "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
-    "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj": {
+    "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "projectUniqueName": "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\23547\\.nuget\\packages\\",
-        "outputPath": "F:\\git\\WPF_Project1\\Project\\Project\\obj\\",
+        "projectPath": "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\zwy\\.nuget\\packages\\",
+        "outputPath": "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visual Studio\\Visual StudioSDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\23547\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zwy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
