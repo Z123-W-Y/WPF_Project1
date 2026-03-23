@@ -270,8 +270,8 @@
 
                             <!-- 透明ToggleButton，负责点击展开/收起 -->
                             <ToggleButton x:Name="ToggleButton"
-                          IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
-                          Focusable="False">
+                                          IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                                          Focusable="False">
                                 <ToggleButton.Style>
                                     <Style TargetType="ToggleButton">
                                         <Setter Property="Background" Value="Transparent"/>

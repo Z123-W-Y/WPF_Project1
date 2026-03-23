@@ -23,6 +23,9 @@
     <Compile Update="Views\Pages\StopView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\SettingsViews\LimitManageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\StartViews\btnHistorySearchView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

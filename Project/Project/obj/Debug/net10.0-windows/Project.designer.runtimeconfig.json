@@ -12,9 +12,15 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\bleach\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\bleach\\.nuget\\packages",
       "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+=======
+      "C:\\Users\\梦茹\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\梦茹\\.nuget\\packages",
+      "E:\\VShuancun\\NuGetPackages"
+>>>>>>> be1546bf69150d24ebaa9c224f45ee65d911cb94
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

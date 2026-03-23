@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\Users\\bleach\\source\\repos\\WPF_Project1\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
@@ -18,6 +19,25 @@
         ],
         "configFilePaths": [
           "C:\\Users\\bleach\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "projectName": "Project",
+        "projectPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\梦茹\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\VShuancun\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\梦茹\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> be1546bf69150d24ebaa9c224f45ee65d911cb94
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
