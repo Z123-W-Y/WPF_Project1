@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Project.Views.Pages.SetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--上区域标签选项-->
+        <Grid Grid.Row="0" Margin="0,27,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+
+            <!--右侧路径区域-->
+            <TextBox  Grid.Column="2" Style="{StaticResource TextBoxStyle}" 
+                      IsReadOnly="True" 
+                      Text="D: \ TPL_File \ 2308161616CS.TPL"
+                      BorderBrush="#7c909d"
+                      Width="298"
+                      Height="32"
+                      Padding="16,4,0,0"
+                      Margin="0,0,16,4"/>
+
+            <!--左侧Tab标签导航-->
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <RadioButton x:Name="btnMaterial"  Content="Motion" GroupName="StartPage" IsChecked="True" Style="{StaticResource TabButtonStyle}" Margin="0,0,4,0" Click="BtnMotorParam_Click"/>
+                <RadioButton x:Name="btnThickness" Content="系统参数" GroupName="StartPage" Style="{StaticResource TabButtonStyle}" Margin="0,0,4,0" Click="BtnSystemParam_Click"/>
+                <RadioButton x:Name="btnHistory" Content="限制管理" GroupName="StartPage" Style="{StaticResource TabButtonStyle}" Margin="0,0,4,0" Click="BtnLimitManage_Click"/>
+                <RadioButton x:Name="btnParameter" Content="权限管理" GroupName="StartPage" Style="{StaticResource TabButtonStyle}" Margin="0,0,4,0" Click="BtnPermissionManage_Click"/>
+            </StackPanel>
+        </Grid>
+
+        <!--下内容区-->
+        <Grid Grid.Row="1">
+            <Border Background="#364D5B"
+                    BorderBrush="#8c9aa3"
+                    BorderThickness="1" >
+                <ContentControl x:Name="SystemContent"/>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

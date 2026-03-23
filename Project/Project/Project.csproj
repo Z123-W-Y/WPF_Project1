@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\admin.png" />
+    <None Remove="Resources\alarm1.png" />
+    <None Remove="Resources\alarm2.png" />
+    <None Remove="Resources\home1.png" />
+    <None Remove="Resources\home2.png" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\manual1.png" />
+    <None Remove="Resources\manual2.png" />
+    <None Remove="Resources\menu.png" />
+    <None Remove="Resources\NGbackground.png" />
+    <None Remove="Resources\okbackground-24.png" />
+    <None Remove="Resources\pause1.png" />
+    <None Remove="Resources\pause2.png" />
+    <None Remove="Resources\reset1.png" />
+    <None Remove="Resources\reset2.png" />
+    <None Remove="Resources\set1.png" />
+    <None Remove="Resources\set2.png" />
+    <None Remove="Resources\start1.png" />
+    <None Remove="Resources\start2.png" />
+    <None Remove="Resources\stop1.png" />
+    <None Remove="Resources\stop2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\admin.png" />
+    <Resource Include="Resources\alarm1.png" />
+    <Resource Include="Resources\alarm2.png" />
+    <Resource Include="Resources\home1.png" />
+    <Resource Include="Resources\home2.png" />
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="Resources\manual1.png" />
+    <Resource Include="Resources\manual2.png" />
+    <Resource Include="Resources\menu.png" />
+    <Resource Include="Resources\NGbackground.png" />
+    <Resource Include="Resources\okbackground-24.png" />
+    <Resource Include="Resources\pause1.png" />
+    <Resource Include="Resources\pause2.png" />
+    <Resource Include="Resources\reset1.png" />
+    <Resource Include="Resources\reset2.png" />
+    <Resource Include="Resources\set1.png" />
+    <Resource Include="Resources\set2.png" />
+    <Resource Include="Resources\start1.png" />
+    <Resource Include="Resources\start2.png" />
+    <Resource Include="Resources\stop1.png" />
+    <Resource Include="Resources\stop2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\SettingsViews\" />
+  </ItemGroup>
+
+</Project>

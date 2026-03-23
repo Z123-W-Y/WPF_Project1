@@ -1,0 +1,501 @@
+﻿<Application x:Class="Project.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Project"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <!-- 导航窗按钮样式 -->
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="62"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#e6e6e6"/>
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <!-- 图片控件：x:Name必须是icon -->
+                                <Image x:Name="icon" Width="62" Height="62" Margin="0,0,0,6"/>
+                                <TextBlock x:Name="text" 
+                                   Text="{TemplateBinding Content}" 
+                                   HorizontalAlignment="Center"
+                                   FontSize="22"
+                                   Foreground="{TemplateBinding Foreground}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- 颜色触发器 -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="text" Property="Foreground" Value="#00e9ed"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="text" Property="Foreground" Value="#00e9ed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                        
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- SettingsTabButtonStyle Tab标签按钮样式-->
+        <Style x:Key="TabButtonStyle" TargetType="RadioButton">
+            <Setter Property="Background" Value="#364D5C"/>
+            <Setter Property="BorderThickness" Value="1,1,1,0"/>
+            <Setter Property="BorderBrush" Value="#8c9aa3"/>
+            <Setter Property="Foreground" Value="#e6e6e6"/>
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Width" Value="124"/>
+            <Setter Property="Padding" Value="15 0"/>
+            <Setter Property="Margin" Value="0,1,-1,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="HanSansCN-Regular"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="IsChecked" Value="False"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="border" 
+                   Background="{TemplateBinding Background}" 
+                   BorderBrush="{TemplateBinding BorderBrush}" 
+                   BorderThickness="{TemplateBinding BorderThickness}"
+                   CornerRadius="4,4,0,0"
+                   Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="border" Property="Background" Value="#476679"/>
+                                <Setter Property="Foreground" Value="#ffffff"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#0cb7b9"/>
+                                <Setter Property="Foreground" Value="#ffffff"/>
+                                <Setter Property="FontFamily" Value="HanSansCN-Bold"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="True"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="border" Property="Background" Value="#00e9ed"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="#99ffffff"/>
+                                <Setter Property="Foreground" Value="#ffffff"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#089b9d"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <!--字体样式模板-->
+        <Style x:Key="FontStyle" TargetType="Control">
+            <!--设置统一的字体族-->
+            <Setter Property="FontFamily" Value="HanSansCN-Regular"/>
+            <!--设置字体大小，如果和你的需求不匹配可以写个派生样式或者在控件中调用后进行属性覆盖-->
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+        </Style>
+        
+        <!--文本框TextBox 192*32-->
+        <Style x:Key="TextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource FontStyle}">
+            <!--TextBox的尺寸,按照你自己的需求设置-->
+            <Setter Property="Width" Value="192"/>
+            <Setter Property="Height" Value="32"/>
+
+            <!--基本属性-->
+            <Setter Property="Background" Value="#364d5b"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#52616b"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Padding" Value="10,4,0,5"/>
+            <!-- 禁止自动换行，确保单行行为稳定 -->
+            <Setter Property="AcceptsReturn" Value="False"/>
+            <Setter Property="TextWrapping" Value="NoWrap"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <!--设置外边框圆角-->
+                            <Border x:Name="TextBoxBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            </Border>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                      Margin="{TemplateBinding Padding}"
+                                      VerticalScrollBarVisibility="Disabled"
+                                      HorizontalScrollBarVisibility="Hidden"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <!--鼠标悬浮背景色改变-->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="TextBoxBorder" Property="Background" Value="#364d5b"/>
+                            </Trigger>
+                            <!--鼠标点击边框颜色改变-->
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="TextBoxBorder" Property="BorderBrush" Value="#7c909d"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- 滑动开关样式 开关按钮样式 -->
+        <Style x:Key="SliderButtonStyle" TargetType="ToggleButton">
+            <Setter Property="Width" Value="36"/>
+            <Setter Property="Height" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid x:Name="RootGrid" Background="Transparent">
+                            <!-- 开关背景轨道 -->
+                            <Border x:Name="Track" 
+                         Background="#364d5b99" 
+                         BorderBrush="#52616b"
+                         BorderThickness="1"
+                         CornerRadius="10" 
+                         Width="36" 
+                         Height="18"/>
+                            <!-- 圆形滑块 -->
+                            <Ellipse x:Name="Thumb" 
+                          Fill="White" 
+                          Width="12" 
+                          Height="12" 
+                          VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                          Margin="3,0,3,0">
+                                <Ellipse.RenderTransform>
+                                    <TranslateTransform x:Name="ThumbTransform" X="0"/>
+                                </Ellipse.RenderTransform>
+                            </Ellipse>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="Track" Property="Background" Value="#364d5b"/>
+                                <Setter TargetName="Track" Property="BorderBrush" Value="#52616b"/>
+                            </MultiTrigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation 
+                                     Storyboard.TargetName="ThumbTransform"
+                                     Storyboard.TargetProperty="X"
+                                     To="18"
+                                     Duration="0:0:0.2"/>
+                                            <ColorAnimation 
+                                     Storyboard.TargetName="Track"
+                                     Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                     To="#0cb7b9"
+                                     Duration="0:0:0.2"/>
+                                            <ColorAnimation 
+                                     Storyboard.TargetName="Track"
+                                     Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                     To="#99ffffff"
+                                     Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation 
+                                     Storyboard.TargetName="ThumbTransform"
+                                     Storyboard.TargetProperty="X"
+                                     To="0"
+                                     Duration="0:0:0.2"/>
+                                            <ColorAnimation 
+                                     Storyboard.TargetName="Track"
+                                     Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                     To="#364d5b99"
+                                     Duration="0:0:0.2"/>
+                                            <ColorAnimation 
+                                     Storyboard.TargetName="Track"
+                                     Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                     To="#52616b"
+                                     Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+        <!--点击按钮ClickButton-->
+        <Style x:Key="RoundClickButtonStyle" TargetType="ToggleButton">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <!-- 外层圆形按钮 -->
+                            <Ellipse x:Name="OuterCircle"
+                     Width="16"
+                     Height="16"
+                     Fill="#364d5b99"
+                     Stroke="#52616b"
+                     StrokeThickness="1"/>
+                            <!-- 选中后内部小白点 -->
+                            <Ellipse x:Name="InnerCircle"
+                     Width="8"
+                     Height="8"
+                     Fill="#ffffff"
+                     Visibility="Collapsed"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="OuterCircle" Property="Fill" Value="#364d5b"/>
+                                <Setter TargetName="OuterCircle" Property="Stroke" Value="#52616b"/>
+                            </MultiTrigger>
+
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="OuterCircle" Property="Fill" Value="#0cb7b9"/>
+                                <Setter TargetName="OuterCircle" Property="Stroke" Value="#190cb7b9"/>
+                                <Setter TargetName="InnerCircle" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="True"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="OuterCircle" Property="Fill" Value="#00e9ed"/>
+                                <Setter TargetName="OuterCircle" Property="Stroke" Value="#00e9ed"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="OuterCircle" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--复选框 方形复选框样式-->
+        <Style x:Key="SquareCheckButtonStyle" TargetType="ToggleButton">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <!-- 外层方形按钮 -->
+                            <Border x:Name="OuterSquare"
+                     Width="16"
+                     Height="16"
+                     Background="#364d5b99"
+                     BorderBrush="#52616b"
+                     BorderThickness="1"
+                     CornerRadius="2"/>
+                            <Path x:Name="CheckIcon"
+                   Width="11.6"
+                   Height="8.1"
+                   Data="M4,8 L7,11 L12,6"
+                   Stroke="#ffffff"
+                   StrokeThickness="1.5"
+                   Stretch="Uniform"
+                   Visibility="Collapsed"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="OuterSquare" Property="Background" Value="#364d5b"/>
+                                <Setter TargetName="OuterSquare" Property="BorderBrush" Value="#52616b"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="OuterSquare" Property="Background" Value="#0cb7b9"/>
+                                <Setter TargetName="OuterSquare" Property="BorderBrush" Value="#0cb7b9"/>
+                                <Setter TargetName="CheckIcon" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsChecked" Value="True"/>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="OuterSquare" Property="Background" Value="#00e9ed"/>
+                                <Setter TargetName="OuterSquare" Property="BorderBrush" Value="#00e9ed"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="OuterSquare" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <!--滑动条样式 滚动条滑块样式-->
+        <Style x:Key="CustomScrollBarStyle_Setting" TargetType="ScrollBar">
+            <Setter Property="Width" Value="8"/>
+            <Setter Property="MinWidth" Value="8"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Opacity" Value="1"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ScrollBar">
+                        <Grid x:Name="BgRoot" SnapsToDevicePixels="True">
+                            <Border Background="Transparent" BorderThickness="0"/>
+                            <Grid>
+                                <Track x:Name="PART_Track" IsDirectionReversed="True">
+                                    <Track.DecreaseRepeatButton>
+                                        <RepeatButton 
+                                Command="{x:Static ScrollBar.PageUpCommand}" 
+                                Background="Transparent" 
+                                BorderThickness="0"
+                                BorderBrush="Transparent"/>
+                                    </Track.DecreaseRepeatButton>
+
+                                    <Track.Thumb>
+                                        <Thumb Cursor="SizeNS">
+                                            <Thumb.Template>
+                                                <ControlTemplate TargetType="Thumb">
+                                                    <Border 
+                                                Background="#3A5F70" 
+                                                MinHeight="10"
+                                                CornerRadius="4"
+                                                HorizontalAlignment="Stretch"
+                                                BorderThickness="0"/>
+                                                </ControlTemplate>
+                                            </Thumb.Template>
+                                        </Thumb>
+                                    </Track.Thumb>
+
+                                    <Track.IncreaseRepeatButton>
+                                        <RepeatButton 
+                                    Command="{x:Static ScrollBar.PageDownCommand}" 
+                                    Background="Transparent" 
+                                    BorderThickness="0"
+                                    BorderBrush="Transparent"/>
+                                    </Track.IncreaseRepeatButton>
+                                </Track>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--每一页标题 引用方式：   
+        <GroupBox Grid.Row="1" Header="激光刻字机初始参数"
+        Style="{StaticResource TitleLeftLineGroupBox}" -->
+        
+        <Style x:Key="TitleWithLineGroupBox" TargetType="GroupBox">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="0,15,0,10"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock 
+                                    Grid.Column="0"
+                                    Text="{TemplateBinding Header}"
+                                    FontFamily="HanSansCN-Bold"
+                                    FontWeight="Bold"
+                                    Foreground="#FFFFFF"
+                                    FontSize="16"
+                                    Margin="0,0,12,0"/>
+                                <Line 
+                                    Grid.Column="1"
+                                    Stroke="#637e8f"
+                                    StrokeThickness="1"
+                                    X1="0" Y1="0" X2="1" Y2="0"
+                                    Stretch="Fill"
+                                    VerticalAlignment="Center"/>
+                            </Grid>
+
+                            <!-- 内容区域 -->
+                            <ContentPresenter Grid.Row="1" Margin="0,10,0,0"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </Application.Resources>
+</Application>
