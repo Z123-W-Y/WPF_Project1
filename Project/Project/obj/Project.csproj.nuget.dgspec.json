@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj": {}
+    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {}
   },
   "projects": {
-    "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj": {
+    "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "projectUniqueName": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "F:\\git\\WPF_Project1\\Project\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\23547\\.nuget\\packages\\",
-        "outputPath": "F:\\git\\WPF_Project1\\Project\\Project\\obj\\",
+        "projectPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\梦茹\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\WPF_Project1\\Project\\Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\VShuancun\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\23547\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\梦茹\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

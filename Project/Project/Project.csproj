@@ -56,8 +56,4 @@
     <Resource Include="Resources\stop2.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\SettingsViews\" />
-  </ItemGroup>
-
 </Project>
