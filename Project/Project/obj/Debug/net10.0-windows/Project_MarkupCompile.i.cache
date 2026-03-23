@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitHub\WPF_Project1\Project\Project\obj\Debug\net10.0-windows\
+E:\实习\TTST实习\项目工程\WPF项目1\Project\Git_Project\WPF_Project1\Project\Project\obj\Debug\net10.0-windows\
 Project
 none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\GitHub\WPF_Project1\Project\Project\App.xaml
+E:\实习\TTST实习\项目工程\WPF项目1\Project\Git_Project\WPF_Project1\Project\Project\App.xaml
 10-366942590
 
 161565009055
-2061601768811
+2061880389680
 MainWindow.xaml;Views\Pages\HomeView.xaml;Views\Pages\ManualView.xaml;Views\Pages\PauseView.xaml;Views\Pages\ResetView.xaml;Views\Pages\SetView.xaml;Views\Pages\StartView.xaml;Views\Pages\StopView.xaml;Views\SettingsViews\LimitManageView.xaml;Views\StartViews\btnHistorySearchView.xaml;
 
-True
+False
 
