@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "qytWVe68pxI=",
   "success": true,
   "projectFilePath": "E:\\实习\\TTST实习\\项目工程\\WPF项目1\\Project\\Git_Project\\WPF_Project1\\Project\\Project\\Project.csproj",
+=======
+  "dgSpecHash": "qwYga/a9vis=",
+  "success": true,
+  "projectFilePath": "D:\\工作\\WPF_Project1\\Project\\Project\\Project.csproj",
+>>>>>>> c72c93aa5ecea7011f3eeb9e6f44dc6047e137ab
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -53,7 +53,7 @@ namespace Project.Views.StartViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project;component/views/startviews/btnhistorysearchview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Project;V1.0.0.0;component/views/startviews/btnhistorysearchview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\StartViews\btnHistorySearchView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -53,7 +53,7 @@ namespace Project.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project;component/views/pages/pauseview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Project;V1.0.0.0;component/views/pages/pauseview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\PauseView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

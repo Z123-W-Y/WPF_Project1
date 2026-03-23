@@ -29,5 +29,8 @@
     <Compile Update="Views\StartViews\btnHistorySearchView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\StartViews\MaterialManagementView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
