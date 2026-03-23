@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\实习\TTST实习\项目工程\WPF项目1\Project\Git_Project\WPF_Project1\Project\Project\obj\Debug\net10.0-windows\
+D:\Users\bleach\source\repos\WPF_Project1\Project\Project\obj\Debug\net10.0-windows\
 Project
 none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\实习\TTST实习\项目工程\WPF项目1\Project\Git_Project\WPF_Project1\Project\Project\App.xaml
-9-1584825797
+D:\Users\bleach\source\repos\WPF_Project1\Project\Project\App.xaml
+101168065404
 
-15715338523
-2061880389680
-MainWindow.xaml;Views\Pages\HomeView.xaml;Views\Pages\ManualView.xaml;Views\Pages\PauseView.xaml;Views\Pages\ResetView.xaml;Views\Pages\SetView.xaml;Views\Pages\StartView.xaml;Views\Pages\StopView.xaml;Views\StartViews\btnHistorySearchView.xaml;
+161788021939
+2061601768811
+MainWindow.xaml;Views\Pages\HomeView.xaml;Views\Pages\ManualView.xaml;Views\Pages\PauseView.xaml;Views\Pages\ResetView.xaml;Views\Pages\SetView.xaml;Views\Pages\StartView.xaml;Views\Pages\StopView.xaml;Views\StartViews\btnHistorySearchView.xaml;Views\StartViews\MaterialManagementView.xaml;
 
 False
 
